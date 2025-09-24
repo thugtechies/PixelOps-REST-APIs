@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download APIs — Thug Techies</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0f0f0f;
+      color: #dcdcdc;
+      font-family: 'Press Start 2P', cursive;
+      text-shadow: 0 0 3px rgba(176,176,176,0.8);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://g.top4top.io/p_3554vme9s1.jpg") no-repeat center center/cover;
+      filter: blur(8px) brightness(0.7);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    header h1 {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    header p {
+      font-size: 0.65rem;
+      color: #aaa;
+    }
+
+    .api-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    .api-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .api-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+    }
+    .api-card h2 {
+      font-size: 0.8rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .api-card p {
+      font-size: 0.6rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 20px;
+      font-size: 0.65rem;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(90deg, #777, #aaa);
+      border-radius: 6px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      text-align: center;
+      font-size: 0.55rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Download APIs</h1>
+    <p>Select a platform below to view its API documentation 📥</p>
+  </header>
+
+  <main class="api-list">
+    <div class="api-card">
+      <h2>YouTube Downloader</h2>
+      <p>Fetch and download YouTube videos in multiple formats.</p>
+      <a href="/docs/downloaders/youtube.html" class="btn">View Docs</a>
+    </div>
+
+    <div class="api-card">
+      <h2>TikTok Downloader</h2>
+      <p>Download TikTok videos with or without watermark.</p>
+      <a href="/docs/downloaders/tiktok.html" class="btn">View Docs</a>
+    </div>
+
+    <div class="api-card">
+      <h2>Instagram Downloader</h2>
+      <p>Download Instagram reels, stories, and posts.</p>
+      <a href="/docs/downloaders/instagram.html" class="btn">View Docs</a>
+    </div>
+
+    <div class="api-card">
+      <h2>Facebook Downloader</h2>
+      <p>Access and download public Facebook videos.</p>
+      <a href="/docs/downloaders/facebook.html" class="btn">View Docs</a>
+    </div>
+
+    <div class="api-card">
+      <h2>Twitter / X Downloader</h2>
+      <p>Fetch and download videos and GIFs from Twitter/X.</p>
+      <a href="/docs/downloaders/twitter.html" class="btn">View Docs</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Thug Techies. All Rights Reserved.
+  </footer>
+</body>
+</html>
